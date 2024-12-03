@@ -1,4 +1,21 @@
+/**
+ * This class contains a static method to check whether a given square matrix
+ * is a magic square.
+ * A magic square is a square matrix where the sum of every row, every column,
+ * and both main diagonals are equal.
+ */
 public class magicsquaretest {
+    /**
+     * This method checks if the given matrix is a magic square.
+     * 
+     * A magic square is a square matrix where the sum of each row, each column,
+     * and both diagonals are the same. The method checks if these conditions hold
+     * true for the input matrix.
+     * 
+     * @param matrix The square matrix to check.
+     * @return true if the matrix is a magic square, false otherwise.
+     */
+
  
     public static boolean MagicSquare(int[][] matrix) {
         int n = matrix.length;
