@@ -1,4 +1,12 @@
 public class longestpalindromic {
+    /**
+     * Checks if a given substring of the string `s` is a palindrome.
+     * 
+     * @param s the input string
+     * @param low the starting index of the substring
+     * @param high the ending index of the substring
+     * @return true if the substring is a palindrome, false otherwise
+     */
         public static boolean checkPal(String s, int low, int high) {
             while (low < high) {
                 if (s.charAt(low) != s.charAt(high))
@@ -8,6 +16,12 @@ public class longestpalindromic {
             }
             return true;
         }
+        /**
+        * Finds and returns the longest palindromic substring in the input string.
+         * 
+        * @param s the input string
+        * @return the longest palindromic substring
+        */
     
     
         public static String longestPalindromic(String s) {
@@ -30,7 +44,11 @@ public class longestpalindromic {
         }
     
        
-    
+    /**
+     * Main method to test the longestPalindromic function.
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         String s1 = "christmas";
         System.out.println("Test Case 1 - Expected: christmas, Result: " + longestPalindromic(s1));
